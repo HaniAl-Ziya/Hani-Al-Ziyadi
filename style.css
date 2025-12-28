@@ -1,0 +1,251 @@
+/* =====================
+   إعدادات عامة
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+body {
+    direction: rtl;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+/* =====================
+   شريط التنقل
+===================== */
+.navbar {
+    background: linear-gradient(to left, #0a2540, #163b63);
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* شعار الموقع */
+.navbar .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* قائمة الروابط */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+}
+
+/* روابط التنقل (تم تكبيرها نهائيًا) */
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 8px 14px;
+    transition: color 0.3s, opacity 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #4f8bd6;
+    opacity: 0.9;
+}
+
+/* =====================
+   الهيرو (رأس الصفحة الرئيسية)
+===================== */
+.hero {
+    text-align: center;
+     padding: 70px 5px; 
+    background: linear-gradient(135deg, #0a2540, #163b63, #1e4f91);
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 60px;       
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 30px;       /* كان 22px */
+    max-width: 1000px;
+    margin: auto;
+    line-height: 2.8;
+}
+
+.hero-img {
+    margin-top: 25px;
+    width: 800px;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(10, 37, 64, 0.35);
+}
+
+/* =====================
+   محتوى الصفحات
+===================== */
+.content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 30px;
+    text-align: center;
+}
+
+.content h1 {
+    color: #0a2540;
+    font-size: 50px;
+    margin: 50px 0 20px;
+}
+
+.content p {
+    font-size: 25px;
+    line-height: 2;
+    color: #333;
+    margin-bottom: 22px;
+}
+
+.content ul {
+    max-width: 800px;
+    margin: 25px auto;
+    text-align: right;
+}
+
+.content ul li {
+    font-size: 17px;
+    line-height: 2;
+    margin-bottom: 10px;
+}
+
+/* =====================
+   البطاقات
+===================== */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 10px;
+    
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(10, 37, 64, 0.3);
+}
+
+.card img {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f0f4ff;
+    border-radius: 50%;
+}
+
+.card h3 {
+    color: #0a2540;
+    margin-bottom: 10px;
+}
+
+/* =====================
+   صفحة التواصل
+===================== */
+.contact-page {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding: 40px 20px;
+}
+
+.contact-header h1 {
+    font-size: 32px;
+    color: #0a2540;
+}
+
+.contact-header p {
+    font-size: 30px;
+    color: #555;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 38px;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 440px;
+    box-shadow: 0 18px 45px rgba(10, 37, 64, 0.3);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    background: linear-gradient(to left, #0a2540, #163b63);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* =====================
+   الفوتر
+===================== */
+footer {
+    background: #0a2540;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* =====================
+   مؤثرات
+===================== */
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#progress-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(to left, #0a2540, #4f8bd6);
+    width: 0%;
+    z-index: 1000;
+}

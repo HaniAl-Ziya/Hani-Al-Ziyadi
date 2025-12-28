@@ -1,0 +1,84 @@
+/* =====================
+   صفحة التواصل - تخصيص
+===================== */
+
+.contact-page {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding: 40px 20px;
+}
+
+/* عنوان صفحة التواصل */
+.contact-header {
+    text-align: center;
+    max-width: 650px;
+}
+
+.contact-header h1 {
+    font-size: 32px;
+    color: #0a2540;
+    margin-bottom: 12px;
+}
+
+.contact-header p {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* كرت النموذج */
+.contact-form {
+    background: #ffffff;
+    padding: 38px;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 440px;
+    box-shadow: 0 18px 45px rgba(10, 37, 64, 0.3);
+}
+
+/* الحقول */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* إضاءة عند التركيز */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #0a2540;
+    box-shadow: 0 0 14px rgba(10, 37, 64, 0.45);
+}
+
+/* زر الإرسال */
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    background: linear-gradient(to left, #0a2540, #163b63);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* حركة الزر */
+.contact-form button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(10, 37, 64, 0.5);
+}
+
+.contact-form button:active {
+    transform: scale(0.97);
+}
